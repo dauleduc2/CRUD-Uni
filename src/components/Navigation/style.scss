@@ -1,0 +1,62 @@
+.navigation {
+  .navbar {
+    // position: fixed;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #242424;
+    color: #fff;
+  }
+  .aTag {
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+  }
+  .navbar__logo {
+    // flex: 1;
+  }
+
+  .logo {
+    font-size: 4.5rem;
+  }
+
+  .navbar__team-name {
+    font-size: 3.5rem;
+    cursor: default;
+    cursor: pointer;
+  }
+
+  .navbar__menu {
+    list-style: none;
+    display: flex;
+    width: 25%;
+    justify-content: space-around;
+    margin: 0;
+  }
+
+  .navbar__item {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    padding-top: 0px;
+  }
+
+  .navbar__item-name {
+    display: block;
+    width: 100%;
+    font-size: 2rem;
+    margin: 18px 0 12px 0;
+    padding-right: 5px;
+    text-decoration: none;
+    color: #fff;
+    text-align: right;
+  }
+
+  .navbar__item:hover .navbar__item-name {
+    color: #ff7300;
+  }
+}

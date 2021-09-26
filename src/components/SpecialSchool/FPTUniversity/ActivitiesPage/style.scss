@@ -1,0 +1,89 @@
+.content__activities {
+  .activityCarousel {
+    width: 100%;
+    overflow: hidden;
+  }
+  .activityContent {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    transition: all 0.4s ease-in-out;
+    // transform: translateX(-100%);
+  }
+  .activities__box {
+    display: flex;
+    flex-direction: column;
+  }
+  .upperLine {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .backIcon,
+    .forwardIcon {
+      font-size: 45px;
+      cursor: pointer;
+      &:hover {
+        color: #ff7300;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+    .backIcon.disabled,
+    .forwardIcon.disabled {
+      cursor: unset;
+      color: rgba(255, 255, 255, 0.205);
+    }
+    .dotLine {
+      display: flex;
+      .dot {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.39);
+        margin: 10px;
+        cursor: pointer;
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.678);
+        }
+      }
+      .dot.active {
+        background-color: rgba(255, 255, 255, 0.884);
+      }
+    }
+  }
+  .activity__img img {
+    width: unset !important;
+    height: unset;
+    width: 100%;
+  }
+  .activityImageCarousel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .imageCarouselBackIcon,
+    .imageCarouselFowardIcon {
+      font-size: 35px;
+      cursor: pointer;
+      color: rgba(255, 255, 255, 0.205);
+      &:hover {
+        color: #ff7300;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+  .activityImageContent {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    overflow: hidden;
+    overflow-x: scroll;
+    transition: all 0.4s ease-in-out;
+    scroll-behavior: smooth;
+  }
+  /* width */
+  ::-webkit-scrollbar {
+    height: 7px;
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,144 @@
+.tableSection {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+      0,
+      rgba(255, 115, 0, 0.2),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../../assets/images/table.jpg");
+  background-size: contain;
+  // background-color: red;
+  .table {
+    width: 100%;
+    // height: 100%;
+    margin: 0 auto;
+    perspective: 300px;
+    align-self: center;
+  }
+
+  .table table {
+    background-color: #2e2e2e;
+    color: white;
+    border-collapse: collapse;
+    font-size: 22px;
+    font-weight: normal;
+    margin: auto;
+    width: 85%;
+  }
+
+  .table table th,
+  td {
+    border: 1px solid grey;
+    text-align: center;
+    perspective: 300px;
+  }
+
+  .table table th {
+    padding: 15px 19px;
+    font-size: 2.3rem;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+  }
+
+  .table-content {
+    background-color: #ff7300;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+  .table-context {
+    transition: all 0.3s ease-in-out;
+    height: 58px;
+  }
+  .tableContextWrapperATag {
+    text-decoration: none;
+  }
+  .table-context:hover {
+    color: #7e7e7e;
+    cursor: pointer;
+    transform: scale(1.005);
+    background-color: #fea42a;
+    box-shadow: 0 7px 14px rgba(255, 255, 255, 0.25),
+      0 10px 10px rgba(255, 255, 255, 0.22);
+  }
+
+  .table-context td {
+    color: #fff;
+    padding: 13px 10px;
+    transition: transform ease 0.2s;
+    p {
+      color: #fff;
+      font-size: 22px;
+      transition: transform ease 0.2s;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  .table-context td:nth-child(2) {
+    color: #fff;
+    padding: unset;
+    transition: transform ease 0.2s;
+  }
+  .table-context td img {
+    max-width: 60px;
+    max-height: 40px;
+  }
+  th,
+  td {
+    max-width: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    pointer-events: unset;
+  }
+  .paginationWrapper {
+    width: 89%;
+    margin: auto;
+    .pagination {
+      display: flex;
+      background-color: #ff7300;
+      padding: 7px 15px;
+      border-radius: 2px;
+      width: fit-content;
+      justify-content: flex-end;
+      margin: 20px 0 0 0;
+      margin-left: auto;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      .ArrowBackIosIcon,
+      .ArrowForwardIosIcon {
+        font-size: 27px;
+        color: white;
+        cursor: pointer;
+      }
+      .ArrowBackIosIcon {
+      }
+      .ArrowForwardIosIcon {
+      }
+      .square {
+        height: 30px;
+        width: 30px;
+        margin: 0 3px;
+        font-size: 18px;
+        font-weight: 500;
+        color: white;
+        line-height: 30px;
+        cursor: pointer;
+        border-radius: 3px;
+
+        &:hover {
+          background-color: #ff9248;
+        }
+        &.active {
+          background-color: #ffd7b5;
+        }
+      }
+    }
+    .dotdotdot {
+      color: white;
+      font-size: 30px;
+      margin: 0 10px;
+      letter-spacing: 1.5px;
+    }
+  }
+}

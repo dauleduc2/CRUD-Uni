@@ -1,0 +1,67 @@
+.navigation .navbar {
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 20px;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #242424;
+  color: #fff;
+}
+
+.navigation .aTag {
+  list-style: none;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navigation .logo {
+  font-size: 4.5rem;
+}
+
+.navigation .navbar__team-name {
+  font-size: 3.5rem;
+  cursor: default;
+  cursor: pointer;
+}
+
+.navigation .navbar__menu {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0;
+}
+
+.navigation .navbar__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  padding-top: 0px;
+}
+
+.navigation .navbar__item-name {
+  display: block;
+  width: 100%;
+  font-size: 2rem;
+  margin: 18px 0 12px 0;
+  padding-right: 5px;
+  text-decoration: none;
+  color: #fff;
+  text-align: right;
+}
+
+.navigation .navbar__item:hover .navbar__item-name {
+  color: #ff7300;
+}
+/*# sourceMappingURL=style.css.map */

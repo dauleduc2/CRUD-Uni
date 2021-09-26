@@ -1,0 +1,178 @@
+.tableSection {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(rgba(255, 115, 0, 0.2)), to(rgba(0, 0, 0, 0.5))), url("../../assets/images/table.jpg");
+  background-image: linear-gradient(0, rgba(255, 115, 0, 0.2), rgba(0, 0, 0, 0.5)), url("../../assets/images/table.jpg");
+  background-size: contain;
+}
+
+.tableSection .table {
+  width: 100%;
+  margin: 0 auto;
+  -webkit-perspective: 300px;
+          perspective: 300px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.tableSection .table table {
+  background-color: #2e2e2e;
+  color: white;
+  border-collapse: collapse;
+  font-size: 22px;
+  font-weight: normal;
+  margin: auto;
+  width: 85%;
+}
+
+.tableSection .table table th,
+.tableSection td {
+  border: 1px solid grey;
+  text-align: center;
+  -webkit-perspective: 300px;
+          perspective: 300px;
+}
+
+.tableSection .table table th {
+  padding: 15px 19px;
+  font-size: 2.3rem;
+  font-weight: 600;
+  letter-spacing: 1.3px;
+}
+
+.tableSection .table-content {
+  background-color: #ff7300;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.tableSection .table-context {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  height: 58px;
+}
+
+.tableSection .tableContextWrapperATag {
+  text-decoration: none;
+}
+
+.tableSection .table-context:hover {
+  color: #7e7e7e;
+  cursor: pointer;
+  -webkit-transform: scale(1.005);
+          transform: scale(1.005);
+  background-color: #fea42a;
+  -webkit-box-shadow: 0 7px 14px rgba(255, 255, 255, 0.25), 0 10px 10px rgba(255, 255, 255, 0.22);
+          box-shadow: 0 7px 14px rgba(255, 255, 255, 0.25), 0 10px 10px rgba(255, 255, 255, 0.22);
+}
+
+.tableSection .table-context td {
+  color: #fff;
+  padding: 13px 10px;
+  -webkit-transition: -webkit-transform ease 0.2s;
+  transition: -webkit-transform ease 0.2s;
+  transition: transform ease 0.2s;
+  transition: transform ease 0.2s, -webkit-transform ease 0.2s;
+}
+
+.tableSection .table-context td p {
+  color: #fff;
+  font-size: 22px;
+  -webkit-transition: -webkit-transform ease 0.2s;
+  transition: -webkit-transform ease 0.2s;
+  transition: transform ease 0.2s;
+  transition: transform ease 0.2s, -webkit-transform ease 0.2s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tableSection .table-context td:nth-child(2) {
+  color: #fff;
+  padding: unset;
+  -webkit-transition: -webkit-transform ease 0.2s;
+  transition: -webkit-transform ease 0.2s;
+  transition: transform ease 0.2s;
+  transition: transform ease 0.2s, -webkit-transform ease 0.2s;
+}
+
+.tableSection .table-context td img {
+  max-width: 60px;
+  max-height: 40px;
+}
+
+.tableSection th,
+.tableSection td {
+  max-width: 400px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  pointer-events: unset;
+}
+
+.tableSection .paginationWrapper {
+  width: 89%;
+  margin: auto;
+}
+
+.tableSection .paginationWrapper .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ff7300;
+  padding: 7px 15px;
+  border-radius: 2px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 20px 0 0 0;
+  margin-left: auto;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.tableSection .paginationWrapper .pagination .ArrowBackIosIcon,
+.tableSection .paginationWrapper .pagination .ArrowForwardIosIcon {
+  font-size: 27px;
+  color: white;
+  cursor: pointer;
+}
+
+.tableSection .paginationWrapper .pagination .square {
+  height: 30px;
+  width: 30px;
+  margin: 0 3px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  line-height: 30px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.tableSection .paginationWrapper .pagination .square:hover {
+  background-color: #ff9248;
+}
+
+.tableSection .paginationWrapper .pagination .square.active {
+  background-color: #ffd7b5;
+}
+
+.tableSection .paginationWrapper .dotdotdot {
+  color: white;
+  font-size: 30px;
+  margin: 0 10px;
+  letter-spacing: 1.5px;
+}
+/*# sourceMappingURL=style.css.map */

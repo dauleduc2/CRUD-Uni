@@ -1,0 +1,142 @@
+.content__activities {
+  /* width */
+}
+
+.content__activities .activityCarousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.content__activities .activityContent {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.content__activities .activities__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content__activities .upperLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content__activities .upperLine .backIcon,
+.content__activities .upperLine .forwardIcon {
+  font-size: 45px;
+  cursor: pointer;
+}
+
+.content__activities .upperLine .backIcon:hover,
+.content__activities .upperLine .forwardIcon:hover {
+  color: #ff7300;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.content__activities .upperLine .backIcon.disabled,
+.content__activities .upperLine .forwardIcon.disabled {
+  cursor: unset;
+  color: rgba(255, 255, 255, 0.205);
+}
+
+.content__activities .upperLine .dotLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content__activities .upperLine .dotLine .dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.39);
+  margin: 10px;
+  cursor: pointer;
+}
+
+.content__activities .upperLine .dotLine .dot:hover {
+  background-color: rgba(255, 255, 255, 0.678);
+}
+
+.content__activities .upperLine .dotLine .dot.active {
+  background-color: rgba(255, 255, 255, 0.884);
+}
+
+.content__activities .activity__img img {
+  width: unset !important;
+  height: unset;
+  width: 100%;
+}
+
+.content__activities .activityImageCarousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content__activities .activityImageCarousel .imageCarouselBackIcon,
+.content__activities .activityImageCarousel .imageCarouselFowardIcon {
+  font-size: 35px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.205);
+}
+
+.content__activities .activityImageCarousel .imageCarouselBackIcon:hover,
+.content__activities .activityImageCarousel .imageCarouselFowardIcon:hover {
+  color: #ff7300;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.content__activities .activityImageContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 90%;
+  overflow: hidden;
+  overflow-x: scroll;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  scroll-behavior: smooth;
+}
+
+.content__activities ::-webkit-scrollbar {
+  height: 7px;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=style.css.map */
